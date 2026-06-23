@@ -1,0 +1,112 @@
+# Production .gitignore for Python (FastAPI) backend + Svelte frontend
+# Root-level ignores for typical developer tools, OS files, and build artifacts
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+venv/
+ENV/
+env/
+.env
+.env.*
+.venv/
+
+# Pytest / coverage / test outputs
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Mypy / pylance / type checkers
+.mypy_cache/
+.pyre/
+.pytype/
+
+# Cache, logs and local files
+.cache/
+*.log
+
+### FastAPI / Uvicorn / ASGI ###
+# Typical workers/pid files
+*.pid
+
+### Node / Svelte / Vite ###
+# Node modules and package manager caches
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# Vite / SvelteKit build and cache
+.svelte-kit/
+.vite/
+public/build/
+build/
+dist/
+
+# Rollup / bundler artifacts
+*.tgz
+
+# TypeScript build info
+*.tsbuildinfo
+
+### IDEs / editors ###
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+*.iml
+
+# Mac / Windows
+.DS_Store
+Thumbs.db
+desktop.ini
+
+### SQLite / local DBs (ignore development DB files)
+*.sqlite3
+*.db
+
+### Misc ###
+# Local env files and secrets
+.env.local
+.env.*
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
+
+# Editor temporary files
+*~
+
+# Lockfiles: some teams commit lockfiles (package-lock.json / yarn.lock).
+# If you track lockfiles, remove the following line; otherwise ignore them.
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# npm/yarn logs
+npm-debug.log*
+yarn-debug.log*
+
+data/
+*data/
+*.sql
+# End of file
