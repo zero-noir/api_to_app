@@ -1,5 +1,5 @@
 [build]
-  base = "apps/web"
+  base = "api_to_app-main/apps/web"
   command = "npm run build"
   publish = "build"
 
