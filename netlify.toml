@@ -1,0 +1,13 @@
+[build]
+  base = "apps/web"
+  command = "npm run build"
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NPM_CONFIG_REGISTRY = "https://registry.npmjs.org/"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
